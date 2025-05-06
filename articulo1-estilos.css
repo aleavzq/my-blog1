@@ -1,0 +1,106 @@
+:root {
+    --fondo-claro: #fdf6f0;
+    --texto-principal: #3e2f2f;
+    --rosa-claro: #f9c5d1;
+    --rosa-fuerte: #c44569;
+    --durazno-suave: #ffe0cc;
+    --blanco: #ffffff;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo-claro);
+    color: var(--texto-principal);
+}
+
+/* Menú de navegación */
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-weight: bold;
+    background-color: var(--rosa-fuerte);
+    padding: 12px 0;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+#menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: var(--rosa-claro);
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: var(--rosa-fuerte);
+    color: var(--blanco);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fondo-claro);
+    color: var(--texto-principal);
+}
+
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--texto-principal);
+}
+
+/* Contenido */
+#contenido {
+    font-size: 14pt;
+    text-align: justify;
+    background-color: var(--durazno-suave);
+    padding: 20px;
+    border: 2px solid var(--blanco);
+    border-radius: 12px;
+    width: 85%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #e0d2c0;
+}
+
+/* Imágenes */
+#zona-imagenes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagenes-bloque {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* opcional, por si se reduce la pantalla */
+    justify-content: center;
+}
+
+.imagenes-bloque img {
+    width: 300px; /* o el tamaño que prefieras */
+    height: auto;
+    border-radius: 8px; /* opcional para estilo */
+}
+
+
+/* Pie de página */
+#zona-final {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: var(--blanco);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--rosa-fuerte);
+    margin-top: 30px;
+    border-top: 2px solid var(--blanco);
+}
